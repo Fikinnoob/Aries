@@ -1,0 +1,60 @@
+.container {
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+.title {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.th {
+  background-color: #3498db;
+  color: white;
+  padding: 0.8rem;
+  text-align: left;
+  font-weight: 500;
+}
+
+.td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #ddd;
+  color: #34495e;
+}
+
+.tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.tr:hover {
+  background-color: #e9f7fe;
+}
+
+.emptyMessage {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+
+  .th, .td {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}

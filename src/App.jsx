@@ -1,5 +1,6 @@
-import AgregarAsociado from './components/AgregarAsociado';
-import TablaAsociados from './components/TablaAsociados';
+import AgregarAsociado from './components/AgregarAsociado/AgregarAsociado';
+import TablaAsociados from './components/TablaAsociados/TablaAsociados';
+import './App.css';
 
 function App() {
   return (
