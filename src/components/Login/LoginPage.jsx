@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth'; // Import specific functions
 import { auth } from '../../config/firebase'; // Adjust this path to your actual Firebase config file
-import styles from './LoginPage.module.css'; // Import the CSS Module
+import styles from '../Login/LoginPage.module.css'; // Import the CSS Module
 
 const LoginComponent = () => {
   const [email, setEmail] = useState('');
@@ -22,7 +22,6 @@ const LoginComponent = () => {
       } else {
         // User is signed out
         console.log('No user signed in.');
-        setMessage('Por favor inicie sesion para continuar.');
         setMessageType(''); // No specific message type
       }
     });
@@ -79,7 +78,7 @@ const LoginComponent = () => {
         <h2>Iniciar Sesión</h2>
         <form onSubmit={handleSignIn}>
           <div className={styles.formGroup}>
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               id="email"
@@ -90,7 +89,7 @@ const LoginComponent = () => {
             />
           </div>
           <div className={styles.formGroup}>
-            <label htmlFor="password">Contraseña:</label>
+            <label htmlFor="password">Contraseña</label>
             <input
               type="password"
               id="password"
@@ -100,7 +99,7 @@ const LoginComponent = () => {
               required
             />
           </div>
-          <button type="submit" className={styles.loginButton}>Entrar</button>
+          <button type="submit" className={styles.loginButton}>Iniciar Sesión</button>
         </form>
         {message && (
           <p className={`${styles.message} ${messageType === 'error' ? styles.errorMessage : styles.successMessage}`}>

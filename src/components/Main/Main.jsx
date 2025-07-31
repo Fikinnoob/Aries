@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
-import { auth } from '../../config/firebase'; // Asegúrate de que esta ruta sea correcta
-import styles from './Main.module.css'; // Importa tus estilos CSS Module
+import { auth } from '../../config/firebase'; 
+import styles from './Main.module.css'; 
 
 const MainPage = () => {
   const [user, setUser] = useState(null);

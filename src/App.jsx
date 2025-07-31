@@ -4,7 +4,8 @@ import { auth } from '.../../config/firebase'; // Asegúrate de que esta ruta se
 
 // Tus componentes
 import LoginComponent from './components/Login/LoginPage';
-import MainComponent from './components/Main/Main'; // Asegúrate de que el nombre del archivo y el import coincidan (antes Main, ahora MainPage si es el archivo)
+import MainComponent from './components/Main/Main';
+// Asegúrate de que el nombre del archivo y el import coincidan (antes Main, ahora MainPage si es el archivo)
 // import AgregarAsociado from './components/AgregarAsociado/AgregarAsociado'; // Por ahora, comenta estos
 // import TablaAsociados from './components/TablaAsociados/TablaAsociados';   // para enfocarnos en Login/Main
 
